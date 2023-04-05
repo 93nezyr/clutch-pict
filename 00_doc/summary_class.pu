@@ -1,0 +1,24 @@
+@startuml summary
+
+interface Model {
+
+}
+
+class MobileNetV3 {
+    
+}
+
+MobileNetV3 -up-|> Model
+
+interface PictLoader {
+
+}
+
+class DefaultPictLoader {
+    input_height: usize
+    input_width: usize
+}
+
+DefaultPictLoader -up-|> PictLoader
+
+@enduml

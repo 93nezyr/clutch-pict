@@ -1,0 +1,16 @@
+@startuml model
+
+interface Model {
+
+}
+
+class MobileNetV3 {
+
+}
+note right of MobileNetV3
+    [[https://github.com/jerry73204/mobilenet-v3-rs]]
+end note
+
+MobileNetV3 -up-|> Model
+
+@enduml

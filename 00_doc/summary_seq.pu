@@ -1,0 +1,29 @@
+@startuml summary
+
+participant Trainer
+note over Trainer
+    PictLoaderを使って画像を読み込み,
+    Modelの学習を行うクラスです.
+end note
+participant Model
+participant PictLoader
+
+autoactivate on
+
+== new ==
+
+create Model
+note over Model
+    NNを保持するクラスです.
+end note
+Trainer -> Model: new()
+return Model
+
+create PictLoader
+note over PictLoader
+    画像を読み込むクラスです.
+end note
+Trainer -> PictLoader: new()
+return PictLoader
+
+@enduml
