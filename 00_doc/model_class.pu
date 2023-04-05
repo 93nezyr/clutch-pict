@@ -1,7 +1,10 @@
 @startuml model
 
 interface Model {
-
+    + predict(input: Tensor) -> Tensor
+    + train(input: Tensor, target: Tensor) -> Tensor
+    + save(path: String)
+    + load(path: String)
 }
 
 class MobileNetV3 {
