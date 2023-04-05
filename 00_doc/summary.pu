@@ -1,0 +1,11 @@
+@startuml summary
+
+interface Model {
+
+}
+
+class MobileNet {
+    
+}
+
+@enduml

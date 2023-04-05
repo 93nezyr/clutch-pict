@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "clutch-pict-model",
+    "clutch-pict-sample-bin",
+]
